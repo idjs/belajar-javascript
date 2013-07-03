@@ -5,7 +5,7 @@ Repository ini berisi ebook yang mencakup dasar Javascript. Terbuka untuk kontri
 
 Layout:
 
-1.	Sifat Dasar Javascropt
+1.	Sifat Dasar Javascript
 2.	Syntax
 3.	Variable dan assignment
 4.	Values
