@@ -5,7 +5,7 @@ Repository ini berisi ebook yang mencakup dasar Javascript. Terbuka untuk kontri
 
 Layout:
 
-1.	Sifat Dasar Javascript
+1.	Pengenalan
 2.	Syntax
 3.	Variable dan assignment
 4.	Values
@@ -21,3 +21,19 @@ Layout:
 14.	Arrays
 15.	Regular expressions
 16.	Math
+
+## Pengenalan: Apa itu Javascript?
+
+[Singkat saja](https://developer.mozilla.org/id/docs/JavaScript).
+
+### Tapi saya pernah dengar soal ECMAScript?
+
+ECMAScript adalah standar yang menjadi acuan penerapan Javascript. Dan sebenarnya, tidak hanya Javascript yang menerapkan standar ECMAScript ini, tetapi juga ActionScript, dan beberapa bahasa lainnya.
+
+Saat ini, Javascript menerapkan ECMAScript versi 5. Sementara itu, ECMAScript versi 6 sedang dalam pengembangan.
+
+### Nggak tuh, saya nggak pernah dengar soal ECMAScript?
+
+Ya tidak apa-apa. Sekarang udah pernah to? :D
+
+## Syntax
