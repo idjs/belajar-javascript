@@ -26,7 +26,9 @@ Table of contents (Daftar isi)
 
 Javascript adalah salah satu bahasa pemrograman komputer yang pada awalnya diimplementasikan sebagai bagian dari web browser atau juga biasa disebut sebagai client-side script yang mana mampu berinteraksi dengan pengguna, memanipulasi content dokumen HTML, dan seterusnya. Belakangan javascript digunakan untuk server, pengembangan dalam dunia game, aplikasi real-time dan aplikasi desktop.
 
-Javascript juga biasa dikenal dengan ECMAScript yang merupakan bagian utama dari web browser modern.
+Javascript sendiri menerapkan standar ECMAScript. ECMAScript ini adalah standar bahasa script yang banyak dipakai oleh bahasa pemrograman yang ditujukan untuk pembuatan aplikasi yang berjalan di browser. Selain Javascript, ECMAScript juga digunakan oleh ActionScript, QML, dsb.
+
+Saat ini, versi ECMAScript yang sudah diterapkan adalah versi 5. Versi berikutnya dari ECMAScript (versi 6), atau yang dikenal dengan "Harmony", masih dalam tahapan pengembangan.
 
 ## Syntax
 
@@ -68,7 +70,7 @@ Karena javascript itu adalah bahasa pemrograman yang dinamis, deklarasi variable
 var a, b = 10, c = 20;
 ```
 
-Semua statement dalam javascript sebaiknya ditutup menggunakan semicolon (; / titik koma) untuk menghindari error. 
+Semua statement dalam javascript sebaiknya ditutup menggunakan semicolon (; / titik koma) untuk menghindari error.
 
 Dalam sebuah dokumen HTML jika variable dideklarasikan diluar function tanpa menyertakan keyword var, maka variable tersebut didefinisikan sebagai global variable oleh web browser, artinya variable tersebut menjadi sebuah ```object``` dari ```window``` contoh :
 
