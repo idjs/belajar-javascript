@@ -1,34 +1,54 @@
-Belajar Javascript
-==================
+<h1 id="belajar-javascript" align="center">
+	Belajar Javascript
+	<img src="https://cdn.rawgit.com/gilbarbara/logos/a7e2b452/logos/javascript.svg" align="right" width="70" style="border-radius: 10%">
+</h1>
 
-Repository ini berisi ebook kumpulan berbagai artikel yang membahas dasar programming javascript. Dengan adanya repository ini semua member ataupun non-member bisa berkonstribusi untuk menambahkan atau mengoreksi semua isi dalam artikel ini.
+<br>
 
-Table of contents (Daftar isi)
+<p align="center" style="padding-bottom: 2.5em; border-bottom: 1px solid #ddd">
+	Repository ini berisi kumpulan materi yang membahas dasar programming javascript. Dengan adanya repository ini semua member ataupun non-member bisa berkonstribusi untuk menambahkan atau mengoreksi semua isi dalam artikel ini.
+</p>
 
-1.	Pengenalan
-2.	Syntax
-3.	Variable dan assignment
-4.	Values
-5.	Booleans
-6.	Numbers
-7.	Strings
-8.	Statements
-9.	Functions
-10.	Exception handling
-11.	Strict mode
-12.	Variable scoping dan closures
-13.	Objects dan inheritance
-14.	Arrays
-15.	Regular expressions
-16.	Math
+<p align="center" style="padding: 1em 0 .5em">
+	<a href="#apa-itu-javascript">Apa itu javascript?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+	<a href="#konten-daftar-isi">Konten (Daftar Isi)</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+	<a href="#">Cara Berkontribusi</a>
+</p>
 
-## Pengenalan - Apa itu Javascript?
+---
+
+## Apa itu Javascript?
 
 Javascript adalah salah satu bahasa pemrograman komputer yang pada awalnya diimplementasikan sebagai bagian dari web browser atau juga biasa disebut sebagai client-side script yang mana mampu berinteraksi dengan pengguna, memanipulasi content dokumen HTML, dan seterusnya. Belakangan javascript digunakan untuk server, pengembangan dalam dunia game, aplikasi real-time dan aplikasi desktop.
 
-Javascript sendiri menerapkan standar ECMAScript. ECMAScript ini adalah standar bahasa script yang banyak dipakai oleh bahasa pemrograman yang ditujukan untuk pembuatan aplikasi yang berjalan di browser. Selain Javascript, ECMAScript juga digunakan oleh ActionScript, QML, dsb.
+### ECMAScript
 
-Saat ini, versi ECMAScript yang sudah diterapkan adalah versi 5. Versi berikutnya dari ECMAScript (versi 6), atau yang dikenal dengan "Harmony", masih dalam tahapan pengembangan.
+Javascript sendiri menerapkan standar [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript). [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) ini adalah standar bahasa script yang banyak dipakai oleh bahasa pemrograman yang ditujukan untuk pembuatan aplikasi yang berjalan di browser. Selain __Javascript__, __ECMAScript__ juga digunakan oleh *__ActionScript__*, *__QML__*, dsb.
+
+Saat ini, versi ECMAScript yang sudah diterapkan adalah versi 6 atau juga disebut (__ES2015/ECMAScript 2015__). Beberapa javascript engine dan web browser (peramban) ternama seperti firefox, google chrome telah [mengimplementasikan ES2015](https://en.wikipedia.org/wiki/ECMAScript#Implementations) baik sebagai __front-end__ application maupun __back-end__ application pada sisi server ([Node.js](https://nodejs.org)).
+
+
+## Konten (Daftar isi)
+
+- [Syntax](#syntax)
+- [Comment (Komentar)](#syntax)
+- [Variable](#variable)
+	- [var, let, const](#var-let-const)
+- [Scope](#scope)
+- [Booleans](#)
+- [Numbers](#)
+- [Strings](#)
+- [Statements](#)
+- [Functions](#functions)
+- [Exception handling](#)
+- [Strict mode](#)
+- [Variable scoping dan closures](#)
+- [Objects dan inheritance](#)
+- [Arrays](#)
+- [Regular expressions](#)
+- [Math](#)
+
+---
 
 ## Syntax
 
