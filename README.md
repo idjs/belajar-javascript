@@ -59,21 +59,17 @@ console.log('Hallo, Indonesia!');
 //=> 'Hallo, Indonesia!'
 ```
 
+## Comment (Komentar)
+
+```javascript
 // Komentar dalam satu baris
+console.log('komentar di atas tidak di eksekusi');
 
 /*
-Komentar multiline (banyak baris).
+Membuat komentar untuk beberapa baris
+atau juga disebut multiline.
 */
-
-// Fungsi dengan balikan string berupa kalimat
-function idjs() {
-  return "Ini adalah contoh fungsi sederhana";
-}
-
-// Mendifiniskan fungsi dalam variable, dalam dunia programming biasanya disebut dengan lambda
-var idjs = function() {
-  return "Halo alam semesta";
-};
+console.log('komentar diatas juga tidak akan di eksekusi');
 ```
 
 ## Variable dan assignment
