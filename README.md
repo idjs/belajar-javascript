@@ -74,32 +74,113 @@ console.log('komentar diatas juga tidak akan di eksekusi');
 
 ## Variable dan assignment
 
-Dalam javascript semua variable harus dideklarasikan dengan menggunakan syntax-keyword "var" diikuti dengan nama variable, bisa diikuti atau tidak diikuti dengan nilai yang diberikan kepada variable, contoh:
+Dalam javascript semua `variable` harus dideklarasikan dengan menggunakan syntax-keyword `var`, `let`, atau `const` lalu diikuti dengan nama variable. Setelah mendefinikasi `variable` kita dapat memberikan nilai atau tidak untuk variable tersebut, contoh:
 
-```
-var a;
-var b = 10;
+```javascript
+var x; // Mendefinisikan variable x tanpa nilai.
+var y = 10; // Mendefinisikan variable y dengan nilai default 10
 ```
 
-Karena javascript itu adalah bahasa pemrograman yang dinamis, deklarasi variable juga bisa dilakukan tanpa mengetikkan keyword "var" berulang ulang, contoh :
+Karena javascript itu adalah bahasa pemrograman yang dinamis, deklarasi variable juga bisa dilakukan tanpa mengetikkan keyword `var` berulang ulang, contoh :
 
-```
+```javascript
 var a, b = 10, c = 20;
 ```
 
-Semua statement dalam javascript sebaiknya ditutup menggunakan semicolon (; / titik koma) untuk menghindari error.
+Semua statement dalam javascript sebaiknya diakhiri menggunakan semicolon `;` (titik koma) untuk menghindari error.
 
-Dalam sebuah dokumen HTML jika variable dideklarasikan diluar function tanpa menyertakan keyword var, maka variable tersebut didefinisikan sebagai global variable oleh web browser, artinya variable tersebut menjadi sebuah ```object``` dari ```window``` contoh :
+Dalam sebuah dokumen HTML jika variable dideklarasikan diluar `function` tanpa menyertakan tipe / jenis keywordnya (`VariableDeclaration`), maka variable tersebut didefinisikan sebagai `global` variable oleh web browser, artinya variable tersebut menjadi sebuah `object` dari `window` contoh :
 
-```
+```javascript
 idjs = "String";
 
 function renderString() {
-  return window.idjs;
-};
+	return window.idjs;
+}
 ```
 
-## Values
+### var, let, const
+
+Dalam penulisan variable, javascript memiliki 3 tipe keyword deklarasi.
+
+| Tipe    | Manipulasi   | Global Akses  |
+| ------- | :----------: | :-----------: |
+| `var`   | ✔            | ✔            |
+| `let`   | ✔            | ✘            |
+| `const` | ✘            | ✘            |
+
+#### var
+
+Pada keyword `var` kita dapat mendeklarasikan `variable` dengan memberikan nilai ataupun tanpa memberikan nilai secara default. Pada keyword ini, nilai dari variable dapat kita ubah pada saat kapapun jika diperlukan.
+
+contoh :
+
+```javascript
+var memberAktif = false;
+console.log(memberAktif);
+//=> false
+
+// fungsi aktivasi data member menjadi aktif pada kondisi tertentu
+function aktivasiMember() {
+	memberAktif = true;
+}
+
+// eksekusi fungsi aktivasi member
+aktivasiMember();
+console.log(memberAktif);
+//=> true
+```
+
+Setelah kita membuat `script` seperti diatas dan menjalankan pada web browser, maka kita akan melihat perubahan nilai pada variable `memberAktif` yang sebelumnya bernilai `false` menjadi `true` setelah kita mengeksekusi fungsi `aktivasiMember();`. Istilah ini biasanya disebut juga dengan perubahan nilai `state` dari suatu variable.
+
+
+#### let
+
+Keyword `let` memiliki pendeketan yang tidak jauh berbeda dengan `var`, tetapi cukup kontras pada sisi implementasinya. Mari kita lihat pada contoh `script` berikut.
+
+```javascript
+var nama = 'nama komunitas';
+
+function testVar() {
+	var nama = 'idjs';
+	console.log(nama);
+	//=> 'idjs'
+
+	console.log(this.nama);
+	//=> 'nama komunitas'
+}
+
+// Menggunakan let
+let githubUrl = 'link github';
+
+function testLet() {
+	githubUrl = 'https://github.com/idjs';
+	console.log(githubUrl);
+	//=> 'https://github.com/idjs'
+
+	console.log(this.githubUrl);
+	//=> undefined
+}
+```
+
+Pada contoh `script` diatas, kita melihat keyword `this` yang merupakan [global](#global) `object` dari suatu `scope`, untuk lebih lengkapnya dibahas pada materi tentang [scope](#scope).
+
+Dapat kita lihat perbedaan implementasi `var` dan `let` berdasarkan `script` yang telah kita buat. Nilai dari kedua `variable` dapat dimanipulasi tetapi `let` tidak mendapatkan hak untuk mengakses melalui jalur [global](#global) `object`.
+
+
+#### const
+
+Seperti pada tabel diatas, nilai pada tipe variable ini tidak dapat diubah. Simak contoh ini, dan bagaimana `const` bekerja.
+
+```javascript
+const namaBulanPertama = 'January';
+
+namaBulanPertama = 'januari';
+//=> TypeError: Assignment to constant variable.
+```
+
+Jika kita mencoba mengubah nilai yang ada pada jenis variable `const`, maka kita akan mendapatkan pesan `TypeError` pada layar `console` sebab nilai dari konstanta (baik dalam index) dan jenis datanya tidak dapat diubah.
+
 
 ## Booleans
 
