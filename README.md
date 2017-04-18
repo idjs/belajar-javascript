@@ -54,9 +54,10 @@ Saat ini, versi ECMAScript yang sudah diterapkan adalah versi 6 atau juga disebu
 
 Contoh sederhana
 
+```javascript
+console.log('Hallo, Indonesia!');
+//=> 'Hallo, Indonesia!'
 ```
-var x; // Mendefinisikan variable x tanpa nilai.
-var y = 10; // Mendefinisikan variable y dengan nilai default 10
 
 // Komentar dalam satu baris
 
