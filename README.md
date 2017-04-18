@@ -192,6 +192,19 @@ Jika kita mencoba mengubah nilai yang ada pada jenis variable `const`, maka kita
 
 ## Functions
 
+```javascript
+// Fungsi dengan mengembalikan string berupa kalimat
+function idjs() {
+	return "Ini adalah contoh fungsi sederhana";
+}
+
+// Mendifiniskan fungsi dalam variable, dalam dunia programming biasanya disebut dengan lambda
+var idjs = function () {
+	return "Halo alam semesta";
+}
+```
+
+
 ## Exception handling
 
 ## Strict mode
